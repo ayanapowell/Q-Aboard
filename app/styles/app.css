@@ -11,7 +11,7 @@ body {
   margin-left: 15%;
   background-color: #94b8b8;
   /*opacity: 0.4;*/
-  height: 1200px;
+  min-height: 1200px;
   margin-bottom: 80px;
 }
 
@@ -168,6 +168,35 @@ body {
   color: #996666;
 }
 
+/* ------------- posts on index page --------------- */
+.question-post {
+  padding: 40px;
+  border-bottom: 1px solid #5c8a8a;
+}
+
+.question-post h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #996666;
+  text-transform: uppercase;
+}
+
+.question-post h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.question-post p {
+  font-size: 18px;
+  padding: 0 25px 0 30px;
+}
+
+.question-post span {
+  font-weight: 700;
+  font-size: 20px;
+  padding-right: 12px;
+}
 /* ------------- footer --------------- */
 .footer {
   border-top: 1px solid #4d4d4d;
