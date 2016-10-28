@@ -1,6 +1,8 @@
 <div class="post-detail">
   <h5>By: {{post.username}}</h5>
-  {{#link-to 'post' post.id}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}
+  <h3><span>Q:</span>{{post.title}}</h3>
   <p>{{post.content}}</p>
-   {{#link-to 'post' post.id}}<i class="comment icon"></i>{{/link-to}}
+  <div class="ui tiny labeled submit icon button">
+      <i class="icon edit"></i> Leave a comment
+  </div>
 </div>
