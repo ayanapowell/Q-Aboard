@@ -6,12 +6,43 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #808080;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  line-height: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+
+.header-image {
+  opacity: 0.5;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 50px;
+  padding-bottom: 47px;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.slogan {
+  padding-top: 50px;
+}
+
 .body {
   width: 70%;
   margin-left: 15%;
   background-color: #94b8b8;
   /*opacity: 0.4;*/
   min-height: 1200px;
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 
@@ -22,7 +53,7 @@ body {
   background-color: ;
   text-align: center;
   margin-bottom: 25px;
-  padding-top: 15px;
+  padding-top: 25px;
   /*position: fixed;*/
 }
 
@@ -170,8 +201,9 @@ body {
 
 /* ------------- posts on index page --------------- */
 .question-post {
-  padding: 40px;
+  padding: 50px;
   border-bottom: 1px solid #5c8a8a;
+  padding-top: 50px;
 }
 
 .question-post h5 {
@@ -196,6 +228,17 @@ body {
   font-weight: 700;
   font-size: 20px;
   padding-right: 12px;
+}
+
+.question-post .comment {
+  color: #f2f2f2;
+  float: right;
+  padding-bottom: 10px;
+}
+
+.question-post .comment:hover {
+  color: white;
+  cursor: pointer;
 }
 /* ------------- footer --------------- */
 .footer {
