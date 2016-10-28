@@ -21,16 +21,12 @@ h3 {
   color: black;
 }
 
-h3.title {
-  text-decoration: none;
-}
-
 .header-image {
-  opacity: 0.5;
+  opacity: 0.9;
   width: 60%;
   margin-left: 20%;
-  margin-top: 50px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 0px;
 }
 
 img {
@@ -44,12 +40,11 @@ img {
 }
 
 .body {
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
   background-color: #94b8b8;
-  /*opacity: 0.4;*/
   min-height: 1000px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 80px;
 }
 
@@ -72,6 +67,11 @@ img {
   letter-spacing: 4px;
 }
 
+h3.title:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .fa-bars {
   font-size: 24px;
   padding-top: 20px;
@@ -88,12 +88,11 @@ img {
 }
 
 .justify:hover,
-.nav h3:hover,
 .icons i:hover,
 .footer .icons i:hover,
 .nav-contents a:hover,
 .nav-contents p:hover {
-  color: #cccccc;
+  color:  #737373;
   cursor: pointer;
 }
 
@@ -150,20 +149,46 @@ img {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+/* ------------- nav contents --------------- */
+.modal {
+  background-color: #f2f2f2;
+  padding: 40px;
+  width: 50%;
+  margin-left: 25%;
+  height: 350px;
+  margin-top: 20%;
+}
+
+#modal {
+  margin-top: 200px;
+}
+
+.modal .header {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.modal button {
+  background-color: #996666;
+  color: white;
+}
 /* ------------- contact page --------------- */
 .contact {
-  padding: 0 20px 0 20px;
+  padding: 0 40px 0 40px;
   color: #f2f2f2;
 }
 
-.contact h2,
-.about h2 {
+.contact h2 {
+  border-bottom: 2px solid  #a3c2c2;
+  padding-bottom: 3px;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 1px 1px #e6e6e6;
+  width: 95%;
 }
 
 .contact p {
@@ -174,7 +199,7 @@ img {
   opacity: 0.8;
   width: 60%;
   margin-left: 20%;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 40px;
 }
 
@@ -194,12 +219,21 @@ img {
 
 .about p {
   font-size: 20px;
-  padding: 40px 30px 0 40px;
-  text-align: center;
+  padding: 60px 0 0 60px;
 }
 .about h2 {
   text-align: center;
   padding-top: 20px;
+  border-bottom: 2px solid  #a3c2c2;
+  padding-bottom: 3px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px #e6e6e6;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .circular {
@@ -207,6 +241,20 @@ img {
 }
 
 /* ------------- posts--------------- */
+.center-block {
+  border-radius: none;
+  background-color: #cc6666;
+  color: white;
+  font-size: 18px;
+  z-index: 5;
+  margin-top: 25px;
+}
+
+.center-block:hover {
+  background-color:  #b89494;
+  color: white;
+}
+
 .question-post,
 .post-detail {
   padding: 50px;
@@ -279,12 +327,6 @@ img {
   color: #595959;
 }
 
-/*.post-detail .comment {
-  color: #b3b3b3;
-  float: right;
-  padding-bottom: 10px;
-}*/
-
 .edit {
   color: #996666;
 }
@@ -292,6 +334,17 @@ img {
 .button {
   float: right;
 }
+
+/* ------------- admin --------------- */
+.admin {
+  background-color: #e0ebeb;
+  width: 80%;
+  margin-left: 10%;
+  min-height: 900px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
 /* ------------- footer --------------- */
 .footer {
   border-top: 1px solid #4d4d4d;

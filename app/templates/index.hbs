@@ -1,4 +1,11 @@
-{{header-image}}
-{{#each model as |post|}}
-  {{question-post post=post}}
-{{/each}}
+<div class="body">
+  <div class="header-image">
+    {{header-image}}
+  </div>
+  {{#each model as |post|}}
+    {{question-post post=post savePost="savePost"}}
+  {{/each}}
+  <div id="modal">
+    {{add-post savePost="savePost"}}
+  </div>
+</div>
