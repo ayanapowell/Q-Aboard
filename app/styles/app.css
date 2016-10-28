@@ -213,13 +213,15 @@ img {
   padding-top: 50px;
 }
 
-.question-post h5 {
+.question-post h5,
+.post-detail h5 {
   font-family: 'Josefin Sans', sans-serif;
   color: #996666;
   text-transform: uppercase;
 }
 
-.question-post h3 {
+.question-post h3,
+.post-detail h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 15px;
   font-weight: bolder;
@@ -228,33 +230,39 @@ img {
   padding-top: 25px;
 }
 
-.question-post h3:hover {
+.question-post h3:hover,
+.post-detail h3:hover {
   color: #f2f2f2;
 }
 
-.question-post p {
+.question-post p,
+.post-detail p {
   font-size: 18px;
   padding: 15px 25px 0 30px;
 }
 
-.question-post span {
+.question-post span,
+.post-detail span {
   font-weight: 700;
   font-size: 20px;
   padding-right: 12px;
 }
 
-.question-post .comment {
+.question-post .comment,
+.post-detail .comment {
   color: #f2f2f2;
   float: right;
   padding-bottom: 10px;
 }
 
-.question-post .comment:hover {
+.question-post .comment:hover,
+.post-detail .comment:hover {
   color: #b3b3b3;
   cursor: pointer;
 }
 
-.question-post span:hover {
+.question-post span:hover,
+.post-detail span:hover {
   color:#4d4d4d;
 }
 /* ------------- footer --------------- */

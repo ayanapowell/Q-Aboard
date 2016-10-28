@@ -1,3 +1,6 @@
-By: {{post.username}}
-<h3>{{post.title}}</h3>
-<p>{{post.content}}</p>
+<div class="post-detail">
+  <h5>By: {{post.username}}</h5>
+  {{#link-to 'post' post.id}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}
+  <p>{{post.content}}</p>
+   {{#link-to 'post' post.id}}<i class="comment icon"></i>{{/link-to}}
+</div>
