@@ -1,6 +1,6 @@
 <div class="question-post">
   <h5>By: {{post.username}}</h5>
-  {{#link-to 'post-detail'}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}
+  {{#link-to 'post' post.id}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}
   <p>{{post.content}}</p>
-   {{#link-to 'post-detail'}}<i class="comment icon"></i>{{/link-to}}
+   {{#link-to 'post' post.id}}<i class="comment icon"></i>{{/link-to}}
 </div>

@@ -15,7 +15,14 @@ h1 {
   line-height: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
 
+h3 {
+  color: black;
+}
+
+h3.title {
+  text-decoration: none;
 }
 
 .header-image {
@@ -217,11 +224,17 @@ img {
   font-size: 15px;
   font-weight: bolder;
   text-transform: uppercase;
+  color: #595959;
+  padding-top: 25px;
+}
+
+.question-post h3:hover {
+  color: #f2f2f2;
 }
 
 .question-post p {
   font-size: 18px;
-  padding: 0 25px 0 30px;
+  padding: 15px 25px 0 30px;
 }
 
 .question-post span {
@@ -237,8 +250,12 @@ img {
 }
 
 .question-post .comment:hover {
-  color: white;
+  color: #b3b3b3;
   cursor: pointer;
+}
+
+.question-post span:hover {
+  color:#4d4d4d;
 }
 /* ------------- footer --------------- */
 .footer {
