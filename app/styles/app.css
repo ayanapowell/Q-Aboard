@@ -279,7 +279,7 @@ h3.title:hover {
 }
 
 .question-post h3:hover {
-  color: #f2f2f2;
+  color: #b3b3b3;
 }
 
 .question-post p,
@@ -298,7 +298,6 @@ h3.title:hover {
 .question-post .comment {
   color: #f2f2f2;
   float: right;
-  padding-bottom: 10px;
 }
 
 .question-post .comment:hover,
@@ -345,6 +344,27 @@ h3.title:hover {
   margin-bottom: 80px;
 }
 
+.admin-post {
+  padding-bottom: 0;
+}
+
+footer.row p {
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+}
+
+footer.row p:hover {
+  color: #595959;
+}
+
+.admin-post .comment,
+.admin-post .write {
+  color: #94b8b8;
+  padding-right: 5px;
+  float: none;
+  margin-bottom: 0px;
+}
 /* ------------- footer --------------- */
 .footer {
   border-top: 1px solid #4d4d4d;
