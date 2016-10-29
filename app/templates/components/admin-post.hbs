@@ -1,15 +1,12 @@
 <div class="admin-post question-post">
   <div class="row">
     <h5 class="col-md-9">By: {{post.username}}</h5>
-    <i {{action 'showUpdateForm'}}class="col-md-3 small edit icon"></i>
   </div>
   {{#link-to 'post' post.id}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}
   <p>{{post.content}}</p>
   <footer class="row">
-    {{#link-to 'post' post.id}}<p class="col-md-6 seeComments"><i class="comment icon"></i>See comments</p>{{/link-to}}
-    <p {{action 'destroyPost' post}}class="col-md-6 delete-post"><i class="trash icon"></i>Delete this post</p>
+    {{#link-to 'post' post.id}}<p class="col-md-4 seeComments"><i class="comment icon"></i>See comments</p>{{/link-to}}
+    <p {{action 'destroyPost' post}}class="col-md-4 delete-post"><i class="trash icon"></i>Delete this post</p>
+    {{update-form post=post update="update"}}
   </footer>
-</div>
-<div class="hidden-form">
-  {{update-form}}
 </div>

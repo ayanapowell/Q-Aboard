@@ -350,6 +350,7 @@ h3.title:hover {
   border-bottom: 40px solid rgb(39,50,58);
 }
 
+
 footer.row p {
   text-align: center;
   color: #666;
@@ -372,25 +373,14 @@ footer p:hover {
 }
 
 .admin-post .edit {
-  float: right;
   padding: 0;
   color: #3973ac;
   cursor: pointer;
 }
 
-.confirm-modal {
-  text-align: center;
-  height: 400px;
-  color: white;
-}
-
-p.close-modal {
-  text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
-  float: right;
-  letter-spacing: 1px;
-  padding-bottom: 20px;
-  cursor: pointer;
+.hidden-form {
+  width: 70%;
+  margin-left: 15%;
 }
 
 #uibuttons {

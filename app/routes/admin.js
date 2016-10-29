@@ -16,7 +16,7 @@ export default Ember.Route.extend({
         }
       });
       post.save();
-      // this.transitionTo('admin');
+      this.transitionTo('admin');
     }
   }
 });

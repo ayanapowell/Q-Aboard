@@ -12,11 +12,10 @@ export default Ember.Component.extend({
       }
     },
     showUpdateForm() {
-      $('#update .small.modal').modal('show');
+      $('.large.modal').modal('show');
     },
     update(post, params) {
-      alert(params['username']);
-      this.sendAction('update', post, params)
+      this.sendAction('update', post, params);
     }
   }
 });
