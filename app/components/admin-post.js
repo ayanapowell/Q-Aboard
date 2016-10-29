@@ -10,6 +10,13 @@ export default Ember.Component.extend({
         $('.trash').transition('pulse');
         this.sendAction('destroyPost', post);
       }
+    },
+    showUpdateForm() {
+      $('#update .small.modal').modal('show');
+    },
+    update(post, params) {
+      alert(params['username']);
+      this.sendAction('update', post, params)
     }
   }
 });
