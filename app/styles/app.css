@@ -255,11 +255,17 @@ h3.title:hover {
   color: white;
 }
 
-.question-post,
-.post-detail {
+.question-post, .post-detail {
   padding: 50px;
   border-bottom: 1px solid #5c8a8a;
   padding-top: 50px;
+}
+
+.postt {
+  margin-top: 0px;
+  margin-top: 20px;
+  padding-top: 10px;
+
 }
 
 .question-post h5,
