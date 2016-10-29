@@ -1,5 +1,6 @@
 <div class="admin">
   {{#each model as |post|}}
-    {{admin-post post=post updatePost="updatePost" destroyPost="destroyPost"}}
+    {{admin-post post=post update="update" destroyPost="destroyPost"}}
   {{/each}}
 </div>
+{{confirm-modal}}

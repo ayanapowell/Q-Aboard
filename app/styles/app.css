@@ -40,8 +40,8 @@ img {
 }
 
 .body {
-  width: 80%;
-  margin-left: 10%;
+  width: 78%;
+  margin-left: 11%;
   background-color: #94b8b8;
   min-height: 1000px;
   margin-top: 20px;
@@ -346,6 +346,8 @@ h3.title:hover {
 
 .admin-post {
   padding-bottom: 0;
+  padding-bottom: 30px;
+  border-bottom: 40px solid rgb(39,50,58);
 }
 
 footer.row p {
@@ -354,17 +356,49 @@ footer.row p {
   cursor: pointer;
 }
 
-footer.row p:hover {
-  color: #595959;
+footer p:hover {
+  color: black;
 }
 
-.admin-post .comment,
-.admin-post .write {
+.admin-post .comment {
   color: #94b8b8;
   padding-right: 5px;
   float: none;
   margin-bottom: 0px;
 }
+
+.admin-post .trash {
+  color: #cc3300;
+}
+
+.admin-post .edit {
+  float: right;
+  padding: 0;
+  color: #3973ac;
+  cursor: pointer;
+}
+
+.confirm-modal {
+  text-align: center;
+  height: 400px;
+  color: white;
+}
+
+p.close-modal {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  float: right;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+#uibuttons {
+  width: 131px;
+  padding-left: 40%;
+  margin-top: 20px;
+}
+
 /* ------------- footer --------------- */
 .footer {
   border-top: 1px solid #4d4d4d;
