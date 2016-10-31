@@ -2,7 +2,7 @@
   <div class="header-image">
     {{header-image}}
   </div>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{question-post post=post savePost="savePost"}}
   {{/each}}
   <div id="modal">

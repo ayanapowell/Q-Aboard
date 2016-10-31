@@ -1,8 +1,12 @@
 <div class="post-detail">
   <h5>By: {{post.username}}</h5>
-  <h3><span>Q:</span>{{post.title}}</h3>
+  <h3 class=posth3><span>Q:</span>{{post.title}}</h3>
   <p>{{post.content}}</p>
-  <div class="ui tiny labeled submit icon button">
-      <i class="icon edit"></i> Leave a comment
-  </div>
+</div>
+<div class="post-comments">
+  {{#each post.comments as |comment|}}
+    <div class="ui comments each-comment well">
+      {{comment-tile comment=comment}}
+    </div>
+  {{/each}}
 </div>

@@ -1,0 +1,18 @@
+{{#if addNewComment}}
+  <form id="new-comment" class="well">
+    <div class="form-group">
+      {{input value=user id="user" class="form-control" placeholder="Your name"}}
+    </div>
+    <div class="form-group">
+      {{input value=title id="title" class="form-control" placeholder="Title"}}
+    </div>
+    <div class="form-group">
+      {{input value=description id="description" class="form-control" placeholder="Comments"}}
+    </div>
+    <button class="btn btn-default" {{action 'saveComment'}}>Post</button>
+  </form> 
+{{else}}
+  <div class="ui tiny labeled submit icon button" id="showCommentForm" {{action 'commentFormShow'}}>
+      <i class="icon edit"></i> Leave a comment
+  </div>
+{{/if}}

@@ -285,7 +285,7 @@ h3.title:hover {
 }
 
 .question-post h3:hover {
-  color: #b3b3b3;
+  color: black;
 }
 
 .question-post p,
@@ -339,6 +339,7 @@ h3.title:hover {
 .button {
   float: right;
 }
+
 
 /* ------------- admin --------------- */
 .admin {
@@ -395,6 +396,39 @@ footer p:hover {
   margin-top: 20px;
 }
 
+.posth3:hover {
+  color: black;
+}
+
+/* ------------- comments -------------- */
+#new-comment {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+#showCommentForm {
+  float: none;
+  width: 20%;
+  margin-left: 40%;
+}
+
+.post-comments .well {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.postComments a {
+  font-size: 0.6em;
+}
+
+.post-comments span {
+  font-size: 0.8em;
+}
+
+.post-comments p {
+  font-size: 0.8em;
+}
 /* ------------- footer --------------- */
 .footer {
   border-top: 1px solid #4d4d4d;
