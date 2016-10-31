@@ -3,9 +3,10 @@
   <h3 class=posth3><span>Q:</span>{{post.title}}</h3>
   <p>{{post.content}}</p>
 </div>
+<h3>Comments:</h3>
 <div class="post-comments">
   {{#each post.comments as |comment|}}
-    <div class="ui comments each-comment well">
+    <div class="ui comments each-comment">
       {{comment-tile comment=comment}}
     </div>
   {{/each}}

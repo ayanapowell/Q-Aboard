@@ -413,9 +413,15 @@ footer p:hover {
   margin-left: 40%;
 }
 
-.post-comments .well {
-  width: 80%;
+.post-comments {
   margin-left: 10%;
+  margin-top: 50px;
+}
+.each-comment {
+  width: 80%;
+  margin: 0;
+  padding-left: 10%;
+  box-shadow: 2px 2px 2px #f2f2f2;
 }
 
 .postComments a {
