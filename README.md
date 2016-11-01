@@ -1,7 +1,13 @@
-# Message-board
+# Query
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+#### _This application is a question and answer message board, October 28st, 2016_
+
+#### By: _**Ayana Powell**_
+
+## Description
+
+_Users may post a question to have answered by other users, may comment on other user's posts and may edit or delete posts_
 
 ## Prerequisites
 
@@ -15,8 +21,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd message-board`
+* `git clone https://github.com/ayanapowell/Q-Aboard` this repository
+* `cd Q-Aboard`
 * `npm install`
 * `bower install`
 
@@ -39,15 +45,27 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Known Bugs
 
-Specify what it takes to deploy your app.
+_No known bugs at this time_
 
-## Further Reading / Useful Links
+## Support and contact details
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+_For questions contact me at: ayanapowell1@gmail.com_
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _Semantic UI_
+* _Node.js with Node Package Manager_
+* _Bower_
+* _Git_
+
+
+### License
+
+*This webpage is licensed under the MIT license.*
+Copyright (c) 2016 **_Ayana Powell_**
 
