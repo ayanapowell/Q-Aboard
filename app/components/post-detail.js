@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   actions: {
     commentFormShow() {
       $('#new-comment').transition('slide down');
+    },
+    showComments() {
+      $('.hidden-comments').transition('slide down');
     }
   }
 });

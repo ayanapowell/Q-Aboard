@@ -43,7 +43,8 @@ img {
   width: 78%;
   margin-left: 11%;
   background-color: #94b8b8;
-  min-height: 1000px;
+  min-height: 1200px;
+  overflow: hidden;
   margin-top: 20px;
   margin-bottom: 80px;
 }
@@ -306,14 +307,6 @@ h3.title:hover {
   padding-right: 12px;
 }
 
-#moment {
-  font-size: 0.8em;
-  color: black;
-  padding-left: 10px;
-  font-style: italic;
-  letter-spacing: 0.5px;
-}
-
 .question-post .comment {
   color: #f2f2f2;
   float: right;
@@ -356,7 +349,9 @@ h3.title:hover {
 
 #new-comment {
   display: none;
+  z-index: 2;
 }
+
 
 /* ------------- admin --------------- */
 .admin {
@@ -418,6 +413,14 @@ footer p:hover {
 }
 
 /* ------------- comments -------------- */
+.hidden-comments {
+  display: none;
+}
+
+.ui.threaded.comments.well {
+  opacity: 0.8;
+}
+
 #new-comment {
   width: 60%;
   margin-left: 20%;
@@ -431,25 +434,20 @@ footer p:hover {
 }
 
 .post-comments {
-  margin-left: 10%;
-  margin-top: 50px;
-}
-.each-comment {
-  width: 80%;
-  margin: 0;
-  padding-left: 10%;
-}
-
-.postComments a {
-  font-size: 0.6em;
+  margin-left: 20%;
+  margin-top: 280px;
+  height: 400px;
+  width: 70%;
+  z-index: 0;
+  display: none;
 }
 
-.post-comments span {
-  font-size: 0.8em;
+.postComments p {
+  font-size: 0.5em;
 }
 
 .post-comments p {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 #h3comments {
@@ -467,4 +465,19 @@ footer p:hover {
 .footer .icons {
   text-align: center;
   font-size: 14px;
+}
+
+i.moment {
+  font-size: 0.7em;
+  color: black;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+
+#wrapper {
+  position: relative;
 }

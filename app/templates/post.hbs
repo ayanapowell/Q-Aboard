@@ -1,5 +1,7 @@
 <div class="body postt">
   {{post-detail post=model}}
   {{add-post savePost="savePost"}}
-  {{new-comment saveComment="saveComment" post=model}}
+  <div class="comment-form-toggle">
+    {{new-comment saveComment="saveComment" post=model}}
+  </div>
 </div>

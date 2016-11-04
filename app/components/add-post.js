@@ -7,7 +7,8 @@ export default Ember.Component.extend({
         username: this.get('username'),
         title: this.get('title'),
         content: this.get('content'),
-        date: this.get('date')
+        date: this.get('date'),
+        location: this.get('location')
       };
       if(params['content'] === "") {
         alert('please fill out all fields');

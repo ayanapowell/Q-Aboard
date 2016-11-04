@@ -1,18 +1,28 @@
-<div class="post-detail">
-  <h5>By: {{post.username}}<span>moment-from-now post.date interval=1000</span></h5>
-  <h3 class=posth3><span>Q:</span>{{post.title}}</h3>
-  <p>{{post.content}}</p>
-</div><br>
-<div class="ui tiny labeled submit icon button" id="showCommentForm" {{action 'commentFormShow'}}>
-    <i class="icon edit"></i> Leave a comment
-</div>
-<div class="post-comments">
-  {{#if post.comments }}
-    <h3 class="ui dividing header" id="h3comments">Comments</h3>
-    {{#each post.comments as |comment|}}
-      <div class="ui comments each-comment">
-        {{comment-tile comment=comment}}
+<div id="wrapper">
+  <div class="post-detail">
+    <div class="row">
+      <div class="col-md-6">
+        <div><h5>By: {{post.username}}<i class="moment">{{moment-from-now post.date interval=1000}}</i></h5></div>
       </div>
-    {{/each}}
-  {{/if}}
+    </div>
+    <h3 class=posth3><span>Q:</span>{{post.title}}</h3>
+    <p>{{post.content}}</p>
+    <button {{action 'showComments'}} class="btn btn-default center-block">See comments</button>
+      {{#if post.comments }}
+        <div class="hidden-comments">
+          {{#each post.comments as |comment|}}
+            <div class="ui comments each-comment">
+              {{comment-tile comment=comment}}
+            </div>
+          {{/each}}
+        </div>
+        {{else}}
+        <p>There are no comments, add one!</p>
+      {{/if}}
+
+
+  </div><br>
+  <div class="ui tiny labeled submit icon button" id="showCommentForm" {{action 'commentFormShow'}}>
+      <i class="icon edit"></i> Leave a comment
+  </div>
 </div>

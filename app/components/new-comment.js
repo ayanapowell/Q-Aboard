@@ -16,8 +16,8 @@ export default Ember.Component.extend({
           alert('All fields required');
         } else {
           this.sendAction('saveComment', params);
-          this.set('addNewComment', false);
-          $('#new-comment').hide();
+          $('#add-post').trigger('reset');
+          $('.comment-form-toggle').hide();
         }
       }
     }

@@ -1,5 +1,9 @@
 <div class="question-post">
-  <h5>By: {{post.username}}<span id="moment">Posted: {{moment-from-now post.date interval=1000}}</span></h5>
+  <div class="row">
+    <div class="col-md-6">
+      <div><h5>By: {{post.username}}<i class="moment">{{moment-from-now post.date interval=1000}}</i></h5></div>
+    </div>
+  </div>
   {{#link-to 'post' post.id}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}
   <p>{{snippet post.content}}</p>
    {{#link-to 'post' post.id}}<i class="comment icon"></i>{{/link-to}}

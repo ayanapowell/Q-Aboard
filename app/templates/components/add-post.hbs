@@ -4,16 +4,19 @@
   <div class="content">
     <form id="add-post">
       <div class="form-group">
-        {{input value=username id="username" placeholder="choose a username" class="form-control"}}
+        {{input value=username  placeholder="choose a username" class="form-control"}}
       </div>
       <div class="form-group">
-        {{input value=date id="date" placeholder="date"  type="date" class="form-control"}}
+        {{input value=date  placeholder="date"  type="date" class="form-control"}}
       </div>
       <div class="form-group">
-        {{input value=title id="title" placeholder="title" class="form-control"}}
+        {{input value=location placeholder="location" class="form-control"}}
       </div>
       <div class="form-group">
-        {{textarea class="form-control" value=content id="content" placeholder="content"}}
+        {{input value=title placeholder="title" class="form-control"}}
+      </div>
+      <div class="form-group">
+        {{textarea class="form-control" value=content placeholder="content"}}
       </div>
       <button {{action 'savePost'}} class="ui basic button">
         <i class="comments outline icon"></i>
