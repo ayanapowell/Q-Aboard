@@ -155,12 +155,16 @@ h3.title:hover {
   padding: 40px;
   width: 50%;
   margin-left: 25%;
-  height: 350px;
+  height: 400px;
   margin-top: 20%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 #modal {
   margin-top: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .modal .header {
@@ -255,7 +259,8 @@ h3.title:hover {
   color: white;
 }
 
-.question-post, .post-detail {
+.question-post,
+.post-detail {
   padding: 50px;
   border-bottom: 1px solid #5c8a8a;
   padding-top: 50px;
@@ -299,6 +304,14 @@ h3.title:hover {
   font-weight: 700;
   font-size: 20px;
   padding-right: 12px;
+}
+
+#moment {
+  font-size: 0.8em;
+  color: black;
+  padding-left: 10px;
+  font-style: italic;
+  letter-spacing: 0.5px;
 }
 
 .question-post .comment {
