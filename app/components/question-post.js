@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 
   actions: {
     favoritePost(post) {
-      this.get('posts').add(post);
+      this.get('favorites').add(post);
     }
   }
 });

@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('postpage');
   this.route('post', {path: '/post/:post_id'});
   this.route('admin');
+  this.route('favorites');
 });
 
 export default Router;
