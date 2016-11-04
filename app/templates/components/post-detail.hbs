@@ -7,7 +7,9 @@
     </div>
     <h3 class=posth3><span>Q:</span>{{post.title}}</h3>
     <p>{{post.content}}</p>
-    <button {{action 'showComments'}} class="btn btn-default center-block">See comments</button>
+    <button {{action 'showComments'}} class="btn btn-default center-block show-button">See comments</button>
+    <button {{action 'showComments2'}} class="btn btn-default center-block hide-button">Hide comments</button>
+    <br>
       {{#if post.comments }}
         <div class="hidden-comments">
           {{#each post.comments as |comment|}}

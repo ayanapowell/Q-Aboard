@@ -1,7 +1,7 @@
 <div class="question-post">
   <div class="row">
     <div class="col-md-6">
-      <div><h5>By: {{post.username}}<i class="moment">{{moment-from-now post.date interval=1000}}</i></h5></div>
+      <div><h5>{{post-popularity post}} By: {{post.username}}<i class="moment">{{moment-from-now post.date interval=1000}}</i></h5></div>
     </div>
   </div>
   {{#link-to 'post' post.id}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}

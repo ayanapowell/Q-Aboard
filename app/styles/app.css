@@ -248,11 +248,13 @@ h3.title:hover {
 /* ------------- posts--------------- */
 .center-block {
   border-radius: none;
+  border: none;
   background-color: #cc6666;
   color: white;
   font-size: 18px;
   z-index: 5;
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .center-block:hover {
@@ -346,6 +348,10 @@ h3.title:hover {
   float: right;
 }
 
+.lightning {
+  text-align: right;
+  color: yellow;
+}
 
 #new-comment {
   display: none;
@@ -444,6 +450,15 @@ footer p:hover {
 
 .postComments p {
   font-size: 0.5em;
+}
+
+.hide-button {
+  visibility: hidden;
+  text-align: center;
+}
+
+.hidden-button2 {
+  visibility: visible;
 }
 
 .post-comments p {
