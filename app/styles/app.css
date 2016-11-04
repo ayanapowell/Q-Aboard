@@ -353,6 +353,17 @@ h3.title:hover {
   color: yellow;
 }
 
+.heart {
+  color: #ff66b3;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.heart:hover {
+  color:#e60073;
+  font-size: 25px;
+}
+
 #new-comment {
   display: none;
   z-index: 2;

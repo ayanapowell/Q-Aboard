@@ -1,10 +1,21 @@
 <div class="question-post">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-11">
       <div><h5>{{post-popularity post}} By: {{post.username}}<i class="moment">{{moment-from-now post.date interval=1000}}</i></h5></div>
     </div>
+    <div class="col-md-1">
+      <i {{action 'favoritePost' post}}class="heart icon"></i>
+    </div>
   </div>
-  {{#link-to 'post' post.id}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}
-  <p>{{snippet post.content}}</p>
+  <div class="row">
+    <div class="col-md-12">
+      {{#link-to 'post' post.id}}<h3><span>Q:</span>{{post.title}}</h3>{{/link-to}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>{{snippet post.content}}</p>
+    </div>
+  </div>
    {{#link-to 'post' post.id}}<i class="comment icon"></i>{{/link-to}}
 </div>
