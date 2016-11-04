@@ -2,12 +2,17 @@
   <h5>By: {{post.username}}</h5>
   <h3 class=posth3><span>Q:</span>{{post.title}}</h3>
   <p>{{post.content}}</p>
+</div><br>
+<div class="ui tiny labeled submit icon button" id="showCommentForm" {{action 'commentFormShow'}}>
+    <i class="icon edit"></i> Leave a comment
 </div>
-<h3>Comments:</h3>
 <div class="post-comments">
-  {{#each post.comments as |comment|}}
-    <div class="ui comments each-comment">
-      {{comment-tile comment=comment}}
-    </div>
-  {{/each}}
+  {{#if post.comments }}
+    <h3 class="ui dividing header" id="h3comments">Comments</h3>
+    {{#each post.comments as |comment|}}
+      <div class="ui comments each-comment">
+        {{comment-tile comment=comment}}
+      </div>
+    {{/each}}
+  {{/if}}
 </div>

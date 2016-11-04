@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   updatePostForm: false,
   actions: {
-    updatePostForm(post) {
+    updatePostForm() {
       this.set('updatePostForm', true);
     },
     update(post) {

@@ -6,16 +6,19 @@ export default Ember.Component.extend({
       commentFormShow() {
         this.set('addNewComment', true);
       },
-      saveComment(params) {
-        $('#new-comment').hide();
-        var params = {
-          user: this.get('user'),
-          title: this.get('title'),
-          description: this.get('description'),
-          post: this.get('post')
-        };
-        this.set('addNewComment', false);
-        this.sendAction('saveComment', params);
+      saveComment() {
+        var user = this.get('user');
+        var title = this.get('title');
+        var description = this.get('description');
+        var post = this.get('post');
+        var params = {user, title, description, post};
+        if(user === "" || title === "" || description === "" || post === "") {
+          alert('All fields required');
+        } else {
+          this.sendAction('saveComment', params);
+          this.set('addNewComment', false);
+          $('#new-comment').hide();
+        }
       }
     }
 });
