@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   commentsFilled: false,
+  sortBy: ['title:desc'],
+  sortedComments: Ember.computed.sort('post.comments', 'sortBy'),
   actions: {
     commentFormShow() {
       $('#new-comment').transition('slide down');

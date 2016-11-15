@@ -12,7 +12,7 @@
     <br>
       {{#if post.comments }}
         <div class="hidden-comments">
-          {{#each post.comments as |comment|}}
+          {{#each sortedComments as |comment|}}
             <div class="ui comments each-comment">
               {{comment-tile comment=comment}}
             </div>

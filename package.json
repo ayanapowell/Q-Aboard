@@ -46,5 +46,8 @@
     "emberfire": "2.0.4",
     "loader.js": "^4.0.10",
     "semantic-ui-ember": "2.0.0"
+  },
+  "dependencies": {
+    "moment": "^2.16.0"
   }
 }
