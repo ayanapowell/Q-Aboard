@@ -1,4 +1,4 @@
-# Query
+# Query Message Board
 
 
 #### _This application is a question and answer message board, October 28st, 2016_
